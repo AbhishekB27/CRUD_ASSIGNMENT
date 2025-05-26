@@ -19,12 +19,12 @@ A full-stack web application to manage student records with CRUD functionality, 
 
 ## 🧰 Tech Stack
 
-| Layer     | Technology                                                        |
-| --------- | ----------------------------------------------------------------- |
-| Frontend  | React.js, Redux, Redux-Saga, Axios, Tailwind CSS (or CSS Modules) |
-| Backend   | Node.js, Express.js                                               |
-| Database  | MongoDB (Atlas or Local)                                          |
-| API Calls | Redux-Saga (I used redux-toolkit)                                 |
+| Layer     | Technology                                       |
+| --------- | ------------------------------------------------ |
+| Frontend  | React.js, Redux, Redux-Saga, Axios, Tailwind CSS |
+| Backend   | Node.js, Express.js                              |
+| Database  | MongoDB (Atlas or Local)                         |
+| API Calls | Redux-Saga (I used redux-toolkit)                |
 
 ## 🌐 Environment Setup
 
@@ -36,14 +36,20 @@ A full-stack web application to manage student records with CRUD functionality, 
 cd backend
 ```
 
-2. `.env` file
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. `.env` file
 
 ```env
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/crud_app
 ```
 
-3. Start the backend server:
+4. Start the backend server:
 
 ```bash
 npm run dev
@@ -61,13 +67,19 @@ npm run dev
 cd frontend
 ```
 
-2. `.env` file
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. `.env` file
 
 ```env
 VITE_BACKEND_API_KEY=http://localhost:8080/api/v1
 ```
 
-3. Start the frontend React app:
+4. Start the frontend React app:
 
 ```bash
 npm run dev
