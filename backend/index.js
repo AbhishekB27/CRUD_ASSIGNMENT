@@ -12,9 +12,12 @@ const PORT = process.env.PORT;
 
 app.use(
   cors({
-    origin: "http://localhost:5173" || "*", // Allow all origins by default
-    methods: ["GET", "POST", "PATCH", "DELETE"], // Allow specific HTTP methods
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+    origin: [
+      "http://localhost:5173",
+      "https://student-management-app-eosin.vercel.app"
+    ],
+    methods: ["GET", "POST", "PATCH", "DELETE"],
+    credentials: true,
   })
 );
 app.use("/api/v1", student);
